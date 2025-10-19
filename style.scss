@@ -1,0 +1,297 @@
+@import 'var';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+a,
+input,
+select,
+button {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.hero {
+    background-color: $colorLightGreen;
+    position: relative;
+    overflow: hidden;
+
+    &__content {
+        padding-top: 196px;
+        padding-bottom: 156px;
+        width: 769px;
+        position: relative;
+    }
+
+    &__title {
+        font-size: 4rem;
+    }
+
+    &__info {
+        font-size: 1.5rem;
+        padding: 24px 0 48px 0;
+    }
+
+    &__info span {
+        font-weight: 600;
+    }
+
+    &__btn {
+        background: $colorBlack;
+        color: $colorWhite;
+        border: 1px solid $colorBlack;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 32px;
+        padding: 16px 65px;
+        border-radius: 60px;
+        cursor: pointer;
+        transition: all .2s linear;
+    }
+    
+    &__btn:hover {
+        background-color: $colorWhite;
+        color: $colorBlack;
+    }
+
+    &__decorate {
+        position: absolute;
+    }
+
+    &__decorate_1 {
+        top: 69px;
+        left: -57px;
+    }
+
+    &__decorate_2 {
+        top: -333px;
+        left: 808px;
+        z-index: 2;
+    }
+
+    &__decorate_3 {
+        top: -10px;
+        left: 734px;
+    }
+
+    &__decorate_4 {
+        top: 538px;
+        right: 344px;
+        left: 828px;
+    }
+}
+
+.animated-strip {
+    background-color: $colorGreen;
+    display: flex;
+    gap: 51px;
+    overflow: hidden;
+
+    &__text {
+        color: $colorBlack;
+        font-size: 1.875rem;
+        font-weight: 700;
+        line-height: 37px;
+        padding: 27px 49px;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+}
+
+.main {
+    background-color: $colorBlack;
+    padding-bottom: 144px;
+    overflow: hidden;
+}
+
+.about {
+    padding-top: 94px;
+    position: relative;
+
+    &__info {
+        padding-bottom: 71px;
+    }
+
+    &__title {
+        color: $colorWhite;
+        font-size: 4rem;
+        font-weight: 700;
+        padding-bottom: 24px;
+    }
+
+    &__text {
+        color: $colorWhite;
+        font-size: 1.5rem;
+        line-height: 32px;
+        width: 772px;
+    }
+
+    &__games {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 32px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__games-box {
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__game {
+        background-color: $colorWhite;
+        border-radius: 30px;
+        box-shadow: 0px 12.612295150756836px 42.251190185546875px -7.57px rgba(0, 0, 0, 0.13);
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+
+    &__game:hover {
+        transform: scale(1.06);
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 32px;
+        padding-bottom: 36px;
+    }
+
+    &__number {
+        color: $colorBlack;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    &__name {
+        color: $colorBlack;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    &__star {
+        position: absolute;
+    }
+
+    &__star_1 {
+        top: 77px;
+        right: -263px;
+    }
+
+    &__star_2 {
+        top: 770px;
+        left: -95px;
+    }
+}
+
+.mini-games {
+    @extend .about;
+    position: relative;
+
+    &__main-title {
+        @extend .about__title;
+        @extend .about__info;
+        padding-bottom: 72px;
+    }
+
+    &__games {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        gap: 32px;
+    }
+
+    &__game {
+        background-color: $colorWhite;
+        border-radius: 30px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    &__box {
+        padding: 48px;
+        grid-column: span 6;
+    }
+
+    &__title {
+        color: $colorBlack;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    &__text {
+        @extend .about__text;
+        color:$colorBlack;
+        padding-top: 24px;
+        padding-bottom: 36px;
+    }
+
+    &__btn {
+        @extend .hero__btn;
+        padding: 16px 75px;
+    }
+
+    &__img {
+        @extend .about__img;
+        grid-column: span 6;
+
+    }
+
+    &__decor {
+        overflow: hidden;
+    }
+    
+    &__star {
+        position: absolute;
+    }
+
+    &__star_3 {
+        top: 143px;
+        right: -76px;
+    }
+
+    &__star_4 {
+        bottom: -99px;
+        right: -69px;
+    }
+}
+
+.footer {
+    background-color: $colorGreen;
+
+    &__text {
+        color: $colorBlack;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 100%;
+        padding: 60px 0;
+        text-align: center;
+    }
+}
