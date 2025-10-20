@@ -161,10 +161,14 @@ button {
   padding-bottom: 36px;
 }
 .about__number {
+  background: rgb(247, 247, 247);
   color: #202027;
+  border-radius: 52.58px;
   font-size: 1rem;
   font-weight: 500;
   line-height: 20px;
+  padding: 10px 16px;
+  align-self: start;
 }
 .about__name {
   color: #202027;

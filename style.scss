@@ -184,10 +184,14 @@ button {
     }
 
     &__number {
+        background: rgba(247, 247, 247, 1);
         color: $colorBlack;
+        border-radius: 52.58px;
         font-size: 1rem;
         font-weight: 500;
         line-height: 20px;
+        padding: 10px 16px;
+        align-self: start;
     }
 
     &__name {
