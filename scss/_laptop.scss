@@ -31,6 +31,18 @@
         left: 700px;
         top: 20px;
     }
+
+    .about__text {
+        width: 590px;
+    }
+
+    .mini-games__box {
+        width: 433px;
+    }
+
+    .mini-games__text {
+        width: auto;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -39,8 +51,20 @@
         padding-right: calc(50% - 450px);
     }
 
+    .about__text {
+        width: 470px;
+    }
+
     .mini-games__box {
         padding: 3rem;
+    }
+
+    .mini-games__box {
+        width: auto;
+    }
+
+    .mini-games__text {
+        width: 250px;
     }
 }
 

@@ -120,6 +120,7 @@ button {
   color: #FFFFFF;
   font-size: 1.5rem;
   line-height: 2rem;
+  width: 788px;
 }
 .about__games {
   display: grid;
@@ -207,6 +208,7 @@ button {
 .mini-games__box {
   padding: 48px;
   grid-column: span 6;
+  width: 504px;
 }
 .mini-games__title {
   color: #202027;
@@ -217,6 +219,7 @@ button {
   color: #202027;
   padding-top: 1.5rem;
   padding-bottom: 2.25rem;
+  width: auto;
 }
 .mini-games__btn {
   padding: 1rem 75px;
@@ -278,14 +281,32 @@ button {
     left: 700px;
     top: 20px;
   }
+  .about__text, .mini-games__text {
+    width: 590px;
+  }
+  .mini-games__box {
+    width: 433px;
+  }
+  .mini-games__text {
+    width: auto;
+  }
 }
 @media (max-width: 1023px) {
   .center {
     padding-left: calc(50% - 450px);
     padding-right: calc(50% - 450px);
   }
+  .about__text, .mini-games__text {
+    width: 470px;
+  }
   .mini-games__box {
     padding: 3rem;
+  }
+  .mini-games__box {
+    width: auto;
+  }
+  .mini-games__text {
+    width: 250px;
   }
 }
 @media (max-width: 920px) {

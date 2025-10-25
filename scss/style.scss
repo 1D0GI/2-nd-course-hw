@@ -136,6 +136,7 @@ button {
         color: $colorWhite;
         font-size: 1.5rem;
         line-height: 2rem;
+        width: 788px;
     }
 
     &__games {
@@ -241,6 +242,7 @@ button {
     &__box {
         padding: 48px;
         grid-column: span 6;
+        width: 504px;
     }
 
     &__title {
@@ -254,6 +256,7 @@ button {
         color:$colorBlack;
         padding-top: 1.5rem;
         padding-bottom: 2.25rem;
+        width: auto;
     }
 
     &__btn {
