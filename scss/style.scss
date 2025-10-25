@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-body {
+html {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
 }
@@ -89,7 +89,6 @@ button {
 
     &__decorate_4 {
         top: 538px;
-        right: 344px;
         left: 828px;
     }
 }
@@ -99,13 +98,14 @@ button {
     display: flex;
     gap: 51px;
     overflow: hidden;
-
+    padding: 1.6875rem 3.0625rem;
+    align-items: center;
+    
     &__text {
         color: $colorBlack;
         font-size: 1.875rem;
         font-weight: 700;
-        line-height: 37px;
-        padding: 27px 49px;
+        line-height: 2.3125rem;
         text-transform: uppercase;
         white-space: nowrap;
     }
@@ -135,8 +135,7 @@ button {
     &__text {
         color: $colorWhite;
         font-size: 1.5rem;
-        line-height: 32px;
-        width: 772px;
+        line-height: 2rem;
     }
 
     &__games {
@@ -179,8 +178,8 @@ button {
         display: flex;
         flex-direction: column;
         gap: 16px;
-        padding: 32px;
-        padding-bottom: 36px;
+        padding: 2rem;
+        padding-bottom: 2.25rem;
     }
 
     &__number {
@@ -196,7 +195,7 @@ button {
 
     &__name {
         color: $colorBlack;
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: 700;
     }
 
@@ -253,13 +252,13 @@ button {
     &__text {
         @extend .about__text;
         color:$colorBlack;
-        padding-top: 24px;
-        padding-bottom: 36px;
+        padding-top: 1.5rem;
+        padding-bottom: 2.25rem;
     }
 
     &__btn {
         @extend .hero__btn;
-        padding: 16px 75px;
+        padding: 1rem 75px;
     }
 
     &__img {
@@ -299,3 +298,8 @@ button {
         text-align: center;
     }
 }
+
+
+@import 'laptop';
+@import 'tablet';
+@import 'mobile';
