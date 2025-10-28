@@ -1,0 +1,134 @@
+@media (max-width: 1240px) {
+    .center {
+        padding-left: calc(50% - 500px);
+        padding-right: calc(50% - 500px);
+    }
+
+    html {
+        font-size: 12px;
+    }
+
+    .hero__top-decor {
+        transform: scale(0.9);
+    }
+
+    .hero__decorate_1 {
+        top: -450px;
+        left: -95px;
+    }
+
+    .hero__decorate_2 {
+        left: 678px;
+        top: -870px;
+    }
+
+    .hero__decorate_3 {
+        left: 604px;
+        top: -550px;
+    }
+
+    .hero__decorate_4 {
+        left: 700px;
+        top: 20px;
+    }
+
+    .about__text {
+        width: 590px;
+    }
+
+    .mini-games__box {
+        width: 433px;
+    }
+
+    .mini-games__text {
+        width: auto;
+    }
+}
+
+@media (max-width: 1023px) {
+    .center {
+        padding-left: calc(50% - 450px);
+        padding-right: calc(50% - 450px);
+    }
+
+    .about__text {
+        width: 470px;
+    }
+
+    .mini-games__box {
+        padding: 3rem;
+    }
+
+    .mini-games__box {
+        width: auto;
+    }
+
+    .mini-games__text {
+        width: 250px;
+    }
+}
+
+@media (max-width: 920px) {
+    html {
+        font-size: 10px;
+    }
+
+    .center {
+        padding-left: calc(50% - 400px);
+        padding-right: calc(50% - 400px);
+    }
+    
+    .hero__content {
+        width: 580px;
+    }
+
+    .animated-strip__star {
+        transform: scale(0.8);
+    }
+
+    .about__games {
+        gap: 2rem;
+    }
+
+    .about__games-box {
+        gap: 2rem;
+    }
+
+    .about__text-box {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 820px) {
+    .center {
+        padding-left: calc(50% - 350px);
+        padding-right: calc(50% - 350px);
+    }
+
+    .hero__decorate_1 {
+        top: -400px;
+        left: -85px;
+    }
+
+    .hero__decorate_2 {
+        transform: scale(0.7);
+        left: 250px;
+        top: -870px;
+    }
+
+    .hero__decorate_3 {
+        display: none;
+    }
+
+    .hero__decorate_4 {
+        left: 600px;
+    }
+
+    .mini-games__title {
+        width: 320px;
+    }
+
+    .about__name {
+        width: 190px;
+    }
+}

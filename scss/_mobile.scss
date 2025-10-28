@@ -1,0 +1,37 @@
+@media (max-width: 425px) {
+    .center {
+        padding-left: calc(50% - 172px);
+        padding-right: calc(50% - 172px);
+    }
+
+    .mini-games__text_width {
+        width: 226px;
+    }
+
+    .mini-games__title {
+        text-align: left;
+        margin: 0;
+    }
+
+    .mini-games__text {
+        text-align: left;
+        margin: 0;
+    }
+
+    .hero__btn {
+        padding: 1rem 103px;
+    }
+}
+
+@media (max-width: 360px) {
+    .center {
+        padding-left: calc(50% - 150px);
+        padding-right: calc(50% - 150px);
+    }
+    
+    .mini-games__box {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+}
