@@ -5,11 +5,11 @@ a = 20;
 alert(a);
 
 // 2
-let yearReleaseIPhone = "9 января 2007 года";
+const yearReleaseIPhone = "9 января 2007 года";
 alert(yearReleaseIPhone);
 
 // 3
-let nameCreatorJS = "Брендан Эйх";
+const nameCreatorJS = "Брендан Эйх";
 alert(nameCreatorJS);
 
 // 4 
@@ -45,7 +45,7 @@ let age = prompt("Сколько вам лет?");
 alert(age);
 
 // 9
-let user = {
+const user = {
     name: "Igor",
     age: 18,
     isAdmin: true
