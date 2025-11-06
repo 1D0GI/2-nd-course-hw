@@ -55,6 +55,10 @@
     .about, .mini-games {
         padding-top: 48px;   
     }
+
+    .mini-games__games {
+        padding-bottom: 12px;
+    }
     
     .mini-games__box {
         padding: 2.6rem;
@@ -173,6 +177,6 @@
 
     .animated-strip {
         gap: 27px;
-        padding: 1.6rem 2.2rem;
+        padding: 0.8rem 2.2rem;
     }
 }
