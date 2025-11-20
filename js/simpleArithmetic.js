@@ -1,7 +1,8 @@
-function simpleArithmetic(oneRandomNum, twoRandomNum) {
-    oneRandomNum = Math.floor(Math.random() * 20);
-    twoRandomNum = Math.floor(Math.random() * 20);
-    
+function simpleArithmetic() {
+    const oneRandomNum = Math.floor(Math.random() * 20);
+    const twoRandomNum = Math.floor(Math.random() * 20);
+    let result = 0;
+
     const myLetters = ['+', '-', '*', '/'];
     let randomTask = '';
     const randomIndex = Math.floor(Math.random() * myLetters.length);
@@ -10,7 +11,7 @@ function simpleArithmetic(oneRandomNum, twoRandomNum) {
 
 
     for (; ;) {
-        let user = prompt(`${oneRandomNum} ${randomTask} ${twoRandomNum} = `);
+        let user = prompt(`Реши эту задачу: ${oneRandomNum} ${randomTask} ${twoRandomNum} = `);
 
         if (user === null) {
             alert('До встречи, еще увидемся!');
@@ -28,41 +29,41 @@ function simpleArithmetic(oneRandomNum, twoRandomNum) {
                 result = oneRandomNum + twoRandomNum;
 
                 if (result === user) {
-                    alert('ура молодец');
+                    alert(`Ура!!! Молодец, ${result} является правильным ответом :)`);
                     shouldExit = true;
+                } else {
+                    alert('неверно, попробуй еще раз');
                 }
-                alert('неверно, попробуй еще раз');
-
                 break;
             case '-':
                 result = oneRandomNum - twoRandomNum;
                 
                 if (result === user) {
-                    alert('ура молодец');
+                    alert(`Ура!!! Молодец, ${result} является правильным ответом :)`);
                     shouldExit = true;
+                } else {
+                    alert('неверно, попробуй еще раз');
                 }
-                alert('неверно, попробуй еще раз');
-
                 break;
             case '*':
                 result = oneRandomNum * twoRandomNum;
 
                 if (result === user) {
-                    alert('ура молодец');
+                    alert(`Ура!!! Молодец, ${result} является правильным ответом :)`);
                     shouldExit = true;
+                } else {
+                    alert('неверно, попробуй еще раз');
                 }
-                alert('неверно, попробуй еще раз');
-
                 break;
             case '/':
                 result = oneRandomNum / twoRandomNum;
 
                 if (result === user) {
-                    alert('ура молодец');
+                    alert(`Ура!!! Молодец, ${result} является правильным ответом :)`);
                     shouldExit = true;
+                } else {
+                    alert('неверно, попробуй еще раз');
                 }
-                alert('неверно, попробуй еще раз');
-                
                 break;
             default:
                 break;

@@ -55,16 +55,17 @@ console.log(delStr);
 
 // 7
 const guessNumber = [9, 8, 7, 6, 5];
-// let user = +prompt('Угадай есть ли число в массиве или нет');
 
-// for (let i = 0; i <= guessNumber.length; i++) {
-//     if (guessNumber[i] === user) {
-//         alert('Угадал!');
-//         break;
-//     } 
-//     alert('Не угадал');
-//     break;
-// }
+for (let i = 0; i <= guessNumber.length; i++) {
+    let user = +prompt('Угадай есть ли число в массиве или нет');
+
+    if (guessNumber.includes(user)) {
+        alert('Угадал!');
+        break;
+    } else {
+        alert('Не угадал!');
+    }
+}
 
 // 8
 const str = "abcdef";
@@ -78,7 +79,7 @@ console.log(result);
 
 // 10 
 const array = [3, 5, 8, 2, 1, 4, 6, 7, 9, 0];
-for (let i = 0; i <= array.length; i++) {
+for (let i = 0; i < array.length; i++) {
     console.log(`${array[i]} + ${array[i + 1]} = ${array[i] + array[i + 1]}`);
 }
 
@@ -127,7 +128,7 @@ for (let i = 0; i < 6; i++) {
     reduceNumber.push(reduceNum);
 }
 
-const arithmetMean = reduceNumber.reduce((i, j) => i + j, 0);
+const arithmetMean = reduceNumber.reduce((i, j) => i + j, 0) / reduceNumber.length;
 
 console.log(reduceNumber);
 console.log(arithmetMean);
