@@ -79,7 +79,7 @@ console.log(result);
 
 // 10 
 const array = [3, 5, 8, 2, 1, 4, 6, 7, 9, 0];
-for (let i = 0; i < array.length; i++) {
+for (let i = 0; i < array.length - 1; i++) {
     console.log(`${array[i]} + ${array[i + 1]} = ${array[i] + array[i + 1]}`);
 }
 
